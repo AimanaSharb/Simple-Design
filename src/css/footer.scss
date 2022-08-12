@@ -1,0 +1,44 @@
+.footer{
+  padding: 51px 0 38px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:76px ;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    &-items{
+      @include text ($montserratalternates, 500, 15px, 18px, rgba(59, 59, 59, 0.5));
+    }
+
+  }
+
+
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+  }
+    &__num{
+    @include text ( $montserratalternates,600, 15px, 18px, $black);
+  }
+  &__time{
+    @include text ($montserratalternates, 500, 15px, 18px, rgba(59, 59, 59, 0.5));
+
+  }
+
+  &__bot{
+    background: #262626;
+    text-align: center;
+    padding: 40px 0;
+    &-desc{
+      @include text ($montserratalternates, 500, 15px , 19px, #ffffff);
+
+
+    }
+  }
+}

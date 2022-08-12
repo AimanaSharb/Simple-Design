@@ -1,0 +1,47 @@
+.header{
+  padding: 46px 0 32px;
+  background: #ffffff;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    list-style-type: none;
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+  }
+
+  &__desc{
+  @include text ($montserratalternates, 400, 10px, 12px, #000000);
+  margin-top: 2px;
+  }
+
+  &__link{
+    @include text ($montserratalternates, 400, 15px, 18px, #000000);
+    transition: 0.5s;
+  &:hover{
+    color: $brown;
+    border-bottom:  1px solid #BD7048;
+    padding-bottom: 4px;
+    transition: 0.5s;
+  }
+  }
+
+
+  &__num{
+    @include text ( $montserratalternates,600, 15px, 18px, $black);
+  }
+  &__time{
+    @include text ($montserratalternates, 500, 15px, 18px, rgba(59, 59, 59, 0.5));
+
+  }
+}

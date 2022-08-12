@@ -1,0 +1,17 @@
+.like{
+  padding: 119px 0;
+  background: url("../images/like.png") center/cover no-repeat;
+  &__content{
+    width: 50%;
+
+  }
+  &__title{
+    @include text($montserratalternates, 600, 30px, 37px, #ffffff);
+  }
+  &__desc{
+
+    @include text ($montserrat,400, 20px, 24px, #ffffff);
+    opacity: 70%;
+    margin: 27px 0 35px;
+  }
+}

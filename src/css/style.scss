@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+.container{
+  padding: 0 130px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+$montserrat: 'Montserrat', sans-serif;
+$montserratalternates: 'Montserrat Alternates', sans-serif;
+$brown : #BD7048;
+$black : #3B3B3B;
+
+
+@mixin text($ff,$fw, $fs, $lh, $cl){
+  font-family:$ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+}
+
+.title{
+  @include text ($montserratalternates, 700, 40px, 49px, #262626);
+}
+.btn{
+  @include text ($montserratalternates, 600, 15px, 18px, #ffffff);
+  padding: 28px 50px 28px 50px;
+  background: $brown;
+  border-radius: 100px;
+  border: $brown 3px solid;
+  transition: 1s;
+  &:hover{
+    background: white;
+    transition: 1s;
+    color: $brown;
+  }
+}
+
+@import "header";
+@import "home";
+@import "works";
+@import "services";
+@import "design";
+@import "plan";
+@import "room";
+@import "like";
+@import "qa";
+@import "footer";
+

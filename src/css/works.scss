@@ -1,0 +1,48 @@
+.works {
+  padding: 202px 0 208px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 150px;
+  }
+
+  &__right{
+    position: relative;
+    z-index: -1;
+    &::after{
+      content: url("../images/works1.png");
+      position: absolute;
+      z-index: -2;
+      top: -110px;
+      left: 141px;
+
+    }
+  }
+
+  &__left{
+    width: 40%;
+  }
+  &__list {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 57px;
+
+    &-items {
+      display: flex;
+      column-gap: 50px;
+    }
+
+    &-num {
+      @include text($montserratalternates, 700, 70px, 85px, rgba(189, 112, 72, 0.2));
+    }
+
+    &-desc {
+      @include text($montserratalternates, 500, 15px, 19px, #262626);
+    }
+  }
+
+}
+
+

@@ -1,0 +1,65 @@
+.design{
+  padding: 148px 0 0;
+  background: #ffffff;
+  &__content{
+    display: flex;
+    align-items: center;
+    column-gap: 123px;
+
+  }
+  &__title{
+    @include text ($montserratalternates, 600, 30px, 37px, #262626);
+  }
+  &__sub{
+    @include text ($montserratalternates,500, 20px, 24px, #262626);
+    opacity: 0.7;
+    margin: 23px 0 30px;
+
+    &-span{
+      color: black;
+    }
+  }
+
+  &__desc{
+    @include text ($montserrat,400, 20px, 24px, #000000);
+  }
+
+  &__list{
+    list-style-type: disc;
+    margin: 44px 0 94px;
+    border-left:1px solid #9F3535;
+    padding-left: 50px;
+    &-items{
+      @include text ($montserratalternates, 500, 20px, 24px, #262626);
+    }
+  }
+
+  &__link{
+    @include text ($montserratalternates, 600, 15px, 18px, $brown);
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+  }
+
+  &__left{
+    position: relative;
+    &::before{
+      content: url("../images/design-before.png");
+      position: absolute;
+      z-index: -1;
+      right: -130px;
+      top: -38px;
+    }
+
+    &::after{
+      content: url("../images/design-after.png");
+      position: absolute;
+      top: 111px;
+      left: 13px;
+    }
+  }
+
+
+}

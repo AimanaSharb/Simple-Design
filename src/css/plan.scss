@@ -1,0 +1,19 @@
+.plan{
+  padding: 164px 0 120px;
+  background: #ffffff;
+  &__content{
+    display: flex;
+    align-items: center;
+    column-gap: 250px;
+  }
+
+  &__desc{
+    @include text ($montserrat,400, 20px, 24px, #000000);
+    margin: 32px 0 39px;
+  }
+
+
+  &__title{
+    @include text ($montserratalternates, 600, 30px, 37px, #262626);
+  }
+}
